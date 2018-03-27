@@ -1,0 +1,73 @@
+01
+11
+11.txt
+4.txt
+one
+-a
+-l
+-h
+-al
+-ah
+-lh
+-alh
+ls
+pwd
+q
+mkdir
+gedit
+touch
+cd ..
+cd -
+cd ~
+
+-a
+-l
+-h
+-al
+-ah
+-lh
+-alh
+ls
+pwd
+q
+mkdir
+gedit
+touch
+cd ..
+cd -
+cd ~
+
+-a
+-l
+-h
+-al
+-ah
+-lh
+-alh
+ls
+pwd
+q
+mkdir
+gedit
+touch
+cd ..
+cd -
+cd ~
+
+-a
+-l
+-h
+-al
+-ah
+-lh
+-alh
+ls
+pwd
+q
+mkdir
+gedit
+touch
+cd ..
+cd -
+cd ~
+

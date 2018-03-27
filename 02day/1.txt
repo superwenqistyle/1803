@@ -1,0 +1,17 @@
+-a
+-l
+-h
+-al
+-ah
+-lh
+-alh
+ls
+pwd
+q
+mkdir
+gedit
+touch
+cd ..
+cd -
+cd ~
+
