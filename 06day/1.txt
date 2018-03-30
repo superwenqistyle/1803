@@ -1,0 +1,8 @@
+my_name = "梁文琦"
+age = 26
+height = 177.5
+weight = 145.8
+profession = AI
+gender = male
+
+
