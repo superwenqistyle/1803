@@ -1,0 +1,5 @@
+print("名片v1.0测试系统".center(30,"*"))
+print("名片系统功能如下:".center(30,"*"))
+print("1.新增名片".center(30,"*"))
+print("2.查找名片".center(30,"*"))
+print("3.修改名片".center)
