@@ -1,6 +1,9 @@
 print("商品交易系统v1.0版本".center(90,"*"))
 print("系统功能: 1.商品价格录入 2.查看商品价格 3.修改商品价格 4.删除商品价格 5.商品交易 6.查看交易记录 7.退出系统".center(20,"*"))
+import time
 coms=[]  #商品列表
+import time
+jilu=[]
 while True:
 	function = int(input("请选择功能项: 1.商品价格录入 2.查看商品价格 3.修改商品价格 4.删除商品价格 5.商品交易 6.查看交易记录 7.退出系统"))
 	if function == 1:
@@ -23,11 +26,13 @@ while True:
 	elif function == 2:
 		print("查找商品")
 		name = input("输入要查找的商品")
+		flag = 0  #默认不存在
 		for temp in coms:
 			if name == temp["name"]:
+				flag = 1
 				print(temp)
-			else:
-				print("请重新输入商品名称")
+		if flag == 0:
+			print("请重新输入商品名称")
 	elif function == 3:
 		print("修改商品")
 		name = input("输入要修改的商品")
@@ -46,26 +51,37 @@ while True:
 	elif function == 4:
 		print("删除商品")
 		name = input("输入要删除的商品")
+		flag = 0  #默认不存在
 		for temp in coms:
 			if name == temp["name"]:
 				print(temp)
+				flag = 1
 				coms.remove(temp)
 				print(coms)
+		if flag == 0:
+			print("商品不存在")
 	elif function == 5:
 		print("商品交易")
 		sum = 0
+		shijian={}
 		p_rice = float(input("输入收款金额额"))
 		zhonglei = int(input("请输入商品种类数目"))
-		for k in coms:
+		for k in range(1,zhonglei+1):
 			name = input("输入商品种类")
 			for temp in coms:
 				if name == temp["name"]:
 					cishu = int(input("输入件数"))
 					t = temp["price"]*cishu
 					sum+=t
+					k=time.strftime("%Y%m%d %H:%M%S")
 					break
-		print("本次消费%.02f元,找零%.02f元"%(sum,p_rice-sum))
+		shijian["time"]=k
+		shijian["收入"]=sum
+		jilu.append(shijian)
+		print("本次消费%.02f元,找零%.02f元,时间:%s"%(sum,p_rice-sum,k))
 	elif function == 6:
 		print("查看交易记录")
+		for p,v in enumerate(jilu):
+			print("%d.%s"%(p+1,v))
 	elif function:
 		break	

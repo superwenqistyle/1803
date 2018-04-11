@@ -1,0 +1,15 @@
+#=[1,2,3,4,5,6,7,8]
+#print(list)
+#list.clear()
+#clear(list)
+#list.pop()
+#list.pop[0]
+#print(list)
+dict={"age":23,"name":"liang"}
+print(dict["age"])
+dict.setdefault("number",50)
+print(dict)
+print(dict.get("name"))
+dict1={"add":"we","gs":"er"}
+dict.update(dict1)
+print(dict)
