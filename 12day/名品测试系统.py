@@ -15,14 +15,14 @@ while True:
 		card={}  #个人信息库
 		phone = input("请输入新的电话")
 		if phone.isdigit() == True and phone.startswith("1") == True and len(phone) == 11:
-			print("数字")
+			#print("数字")
 			#if phone.startswith("1") == True:
 			#	if len(phone) == 11:
-					
+			isdelete = o  #默认		
 	elif function == 2:
 		print("查找名片".center(60,"*"))
 	elif function == 3:
-		print("修改名片".center(60,"*"))
+		print("修改名片".center                                                                                                                    (60,"*"))
 	elif function == 4:
 		print("删除名片".center(60,"*"))
 	elif function == 5:
