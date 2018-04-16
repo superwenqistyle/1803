@@ -1,0 +1,16 @@
+dict={"name":"dfdf","age":232}
+def input():
+	#global dict
+	dict["people"]="kajdfh"
+	print(dict)
+input()
+print(dict)
+
+
+
+list=[1,2,3,4,5]
+def input():
+	list[0]=9
+	print(list)
+input()
+print(list)
